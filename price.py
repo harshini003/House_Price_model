@@ -37,7 +37,7 @@ property_type_mapping = {"Apartment": 0,
                          "Studio Apartment":4,
                          "Villa" : 5}
 #reading pickle file
-with open("House.pkl",'rb')as f:
+with open("House_Price.pkl",'rb')as f:
     model=pickle.load(f)
 #create a function to accept inputs and create an array
 def predict(bed,bath,loc,size,status,facing,Type):
